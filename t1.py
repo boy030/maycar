@@ -19,6 +19,7 @@ while True:
   print("message_data=",message_data)
   print(message_data[3])
   if  message_data[2]=="left_stick_vert" and message_data[3]>0 :
+    
       ominibot.individual_wheel(V1=a,V3=a,V2=a,V4=a, debug=False) 
       time.sleep(1)
   elif message_data[2]=="left_stick_vert" and message_data[3]<0 :
